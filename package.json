@@ -1,5 +1,5 @@
 {
-  "name": "Redux Starter",
+  "name": "Starter",
   "version": "1.0.0",
   "description": "Simple starter package for Redux with React and Babel support based on Stephen Grider's ReduxSimpleStarter Module",
   "main": "index.js",
