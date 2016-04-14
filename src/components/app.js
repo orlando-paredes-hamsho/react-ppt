@@ -11,7 +11,7 @@ export default class App extends Component {
   render(){
     return (
       <div>
-        Hello! I'm in src/components/app.js!
+        Hello! I'm new to coding src/components/app.js!
       </div>
     );
   }
