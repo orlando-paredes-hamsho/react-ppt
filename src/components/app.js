@@ -1,10 +1,18 @@
 import React from 'react';
 import { Component } from 'react';
+import $ from 'jquery';
+
 
 export default class App extends Component {
-  render() {
+  constructor(props){
+    super(props);
+  }
+  
+  render(){
     return (
-      <div>React simple starter</div>
+      <div>
+        Hello! I'm in src/components/app.js!
+      </div>
     );
   }
 }
