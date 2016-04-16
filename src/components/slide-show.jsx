@@ -56,12 +56,12 @@ class SlideShow extends Component {
                                 : "slide_show " + this.props.direction;
         return (
             <div tabIndex="0"
-                className={className + " " + this.props.theme } 
+                className={className} 
                 onClick={ this.handleClick.bind(this)}
                 onKeyUp={ this.handleKeyboard.bind(this) }
             >
                 <ReactCSSTransitionGroup transitionName="slides" transitionEnterTimeout={1} transitionLeaveTimeout={500} >
-                    <Slide key={this.props.currentSlide}>
+                    <Slide key={this.props.currentSlide} theme={this.props.theme}>
                         {(React.Children.count(this.props.children) > 1) ? this.props.children[this.props.currentSlide] : this.props.children}
                     </Slide>
                 </ReactCSSTransitionGroup>
