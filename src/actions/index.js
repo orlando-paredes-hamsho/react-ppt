@@ -1,4 +1,4 @@
-import { CHANGE_SLIDE } from "./types";
+import { CHANGE_SLIDE, CHANGE_DIRECTION } from "./types";
 
 export function change_slide(slide){
     
@@ -8,5 +8,16 @@ export function change_slide(slide){
         payload: slide
         
     });
+    
+}
+
+export function change_direction(direction){
+    
+    return({
+        
+        type: CHANGE_DIRECTION,
+        payload: direction
+        
+    })
     
 }

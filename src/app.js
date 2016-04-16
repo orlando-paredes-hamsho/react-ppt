@@ -11,10 +11,10 @@ export default class App extends Component {
   
   render(){
     return (
-        <SlideShow>
-          <p>Hello!</p>
-          <p>How's it going</p>
-          <p>Is each one of this different?</p>
+        <SlideShow transition="opacity" theme="tcs">
+          <img src="https://www.nyfa.edu/student-resources/wp-content/uploads/2014/06/Landscape-Sunset.jpg" />  
+          <img src="http://science-all.com/images/landscape/landscape-05.jpg" />
+          <img src="http://www.technocrazed.com/wp-content/uploads/2015/12/Landscape-wallpaper-7.jpg" />
         </SlideShow>
     );
   }

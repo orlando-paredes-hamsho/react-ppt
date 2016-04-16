@@ -1,4 +1,19 @@
-body{
-    margin:0;
-    padding:0;
+@import url("../src/components/css/slide-show.css");
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/********************************
+            Themes
+*********************************/
+
+/* TCS */
+
+.tcs{
+    background:url(../img/bk.png);
+    background-repeat: repeat-y;
+    background-size: 50% 50%;
+    background-position: left;
 }
