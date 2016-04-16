@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import { connect } from 'react-redux';
 
 class SlideShow extends Component {
     
@@ -12,11 +12,17 @@ class SlideShow extends Component {
         
         return (
             <div className="slideShow">
-                {this.props.children}
+                {(React.Children.count(this.props.children) > 1) ? this.props.children[this.props.currentSlide] : this.props.children}
             </div>
         );
     }
     
 }
 
-export default SlideShow;
+function mapStateToProps ({currentSlide}){
+    return{
+        currentSlide
+    }
+}
+
+export default connect(mapStateToProps)(SlideShow);

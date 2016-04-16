@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 
 class Slide extends Component {
     
@@ -9,7 +8,7 @@ class Slide extends Component {
     
     render(){
         
-        if( React.Children.count(this.props.children) ===0 ) return null;
+        if( React.Children.count(this.props.children) === 0 ) return null;
         
         return (
             <div className="slide">
