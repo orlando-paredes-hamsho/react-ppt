@@ -3,7 +3,6 @@ import { Component } from 'react';
 import $ from 'jquery';
 
 import SlideShow from './components/slide-show.jsx';
-import Slide from './components/slide.jsx';
 
 export default class App extends Component {
   constructor(props){
@@ -12,14 +11,11 @@ export default class App extends Component {
   
   render(){
     return (
-      <div>
         <SlideShow>
-          <Slide>Hello!</Slide>
-          <Slide>We're Making Slides!</Slide>
-          <Slide>Maybe it's too complicated</Slide>
-          <Slide>But it's cool right?</Slide>
+          <p>Hello!</p>
+          <p>How's it going</p>
+          <p>Is each one of this different?</p>
         </SlideShow>
-      </div>
     );
   }
 }
