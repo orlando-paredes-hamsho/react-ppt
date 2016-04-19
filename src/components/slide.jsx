@@ -11,7 +11,7 @@ class Slide extends Component {
         if( React.Children.count(this.props.children) === 0 ) return null;
         
         return (
-            <div className={"slide-transition "+this.props.theme}>
+            <div className={"slide-transition"}>
                 <div className="slide">
                     {this.props.children}
                 </div>

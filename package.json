@@ -1,7 +1,7 @@
 {
-  "name": "Starter",
+  "name": "WorkPPT",
   "version": "1.0.0",
-  "description": "Simple starter package for Redux with React and Babel support based on Stephen Grider's ReduxSimpleStarter Module",
+  "description": "Sandbox for React PPT effort",
   "main": "index.js",
   "repository": "",
   "scripts": {
