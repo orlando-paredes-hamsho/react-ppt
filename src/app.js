@@ -1,9 +1,11 @@
 import React from 'react';
 import { Component } from 'react';
-import $ from 'jquery';
+import _ from 'lodash';
 
 import SlideShow from './components/slide-show.jsx';
-import Cover from './components/slides/cover.jsx';
+import * as Slides from './components/slides';
+
+var slides = Slides.default;
 
 export default class App extends Component {
   constructor(props){
@@ -13,11 +15,9 @@ export default class App extends Component {
   render(){
     return (
         <SlideShow transition="horizontal" theme="tcs">
-          <Cover />
-          <img src="https://www.nyfa.edu/student-resources/wp-content/uploads/2014/06/Landscape-Sunset.jpg" />  
-          <img src="http://science-all.com/images/landscape/landscape-05.jpg" />
-          <img src="http://www.technocrazed.com/wp-content/uploads/2015/12/Landscape-wallpaper-7.jpg" />
-          
+          {_.map(slides,(slide) => {
+            return slide.default.prototype.render();
+          })}
         </SlideShow>
     );
   }

@@ -14,7 +14,8 @@ class SlideShow extends Component {
     
     handleClick(e){
         e.preventDefault();
-        this.setCurrentSlide(this.props.currentSlide + 1,"forward");
+        //TODO: Reset on click behaviour
+        //this.setCurrentSlide(this.props.currentSlide + 1,"forward");
     }
     
     setCurrentSlide(slide, direction){
