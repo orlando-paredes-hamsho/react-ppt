@@ -95,3 +95,16 @@ img{
     height: 100%;
     float: left;
 }
+
+.main-section.left{
+    width:50%;
+    position:absolute;
+    bottom:5%;
+    left:0px;
+}
+.main-section.right{
+    width:50%;
+    position:absolute;
+    bottom:5%;
+    right:0px;
+}
