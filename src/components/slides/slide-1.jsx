@@ -59,25 +59,30 @@ class Slide1 extends Component {
     render(){
         
         return (
-            <div>
-                <h3 style={{'maxWidth': '34%', 'fontSize': '6em', 'color': 'white', 'padding': '0 8%'}}>2010-13</h3>
-                <div className="main-section left">
-                    <Highcharts config={config}></Highcharts>
+            <div className="row">
+                <div className="left side">
+                    <h3 className="year">2010-13</h3>
+                    <div className="main-section left">
+                        <Highcharts config={config}></Highcharts>
+                    </div>
                 </div>
-                <div className="main-section right">
-                    <h3>Project Delivered</h3>
-                    <ul>
-                        <li>Member Stories and Poll</li>
-                        <li>Ask USAA Financial Advice Community</li>
-                        <li>Introduce New Social Communities</li>
-                        <li>Collect Social Media Profile on Mobile</li>
-                    </ul>
-                    <h3>Highlights</h3>
-                    <ul>
-                        <li>Start Social Media Development</li>
-                        <li>Development Started with 3 Member Team</li>
-                        <li>GDL Mobile Lab Inaugurated in 2012</li>
-                    </ul>
+                
+                <div className="right side">
+                    <div className="list-content">
+                        <h3 className="list header blue">Project Delivered</h3>
+                        <ul>
+                            <li>Member Stories and Poll</li>
+                            <li>Ask USAA Financial Advice Community</li>
+                            <li>Introduce New Social Communities</li>
+                            <li>Collect Social Media Profile on Mobile</li>
+                        </ul>
+                        <h3 className="list header light">Highlights</h3>
+                        <ul>
+                            <li>Start Social Media Development</li>
+                            <li>Development Started with 3 Member Team</li>
+                            <li>GDL Mobile Lab Inaugurated in 2012</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         );
