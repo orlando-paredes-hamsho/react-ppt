@@ -69,7 +69,8 @@ class Slide1 extends Component {
                 
                 <div className="right side">
                     <div className="list-content">
-                        <h3 className="list header blue">Project Delivered</h3>
+                        <h3 className="list header blue"><label htmlFor="clickHide1">Project Delivered</label></h3>
+                        <input type="checkbox" id="clickHide1" name="clickHide1" className="clickHide" defaultChecked="true"/>
                         <ul>
                             <li>Member Stories and Poll</li>
                             <li>Ask USAA Financial Advice Community</li>
