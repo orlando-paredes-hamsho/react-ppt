@@ -45,9 +45,9 @@ const config = {
         column: { animation: true },
     },
     series: [
-        { type:'column', data: [50], color:'#000', name:'Digital & ECM' },
-        { type:'column', data: [9], color:'#fff', name:'QA'},
-        { type:'column', data: [50], color:'#C364B8', name:'EDA'}
+        { type:'column', data: [50], color:'#3F3F40', name:'Digital & ECM', visible: false },
+        { type:'column', data: [9], color:' #467408', name:'QA', visible: false },
+        { type:'column', data: [50], color:'#21ABE9', name:'EDA', visible: false }
     ]
 };
 
@@ -90,9 +90,9 @@ hideHandler3(){
     render(){
         
         return (
-            <div className="row">
+            <div className="row inverse">
                 <div className="left side">
-                    <h3 className="year" >2010-13</h3>
+                    <h3 className="year" >2016</h3>
                     <div className="main-section left">
                         <Highcharts config={config}></Highcharts>
                     </div>
@@ -100,7 +100,7 @@ hideHandler3(){
                 
                 <div className="right side">
                     <div className="list-content">
-                        <h3 className="list header blue" onClick={this.hideHandler.bind(this)}>Project Delivered</h3>
+                        <h3 className="list header black" onClick={this.hideHandler.bind(this)}>Project Delivered</h3>
                         <ul className={this.state.ul1}>
 
                             <li>IMM</li>
@@ -117,7 +117,7 @@ hideHandler3(){
                              <li>1 CIO Quality Cup</li>
                              <li>De-centralized BI Lab operations across LOBs</li>
                         </ul>
-                        <h3 className="list header light" onClick={this.hideHandler3.bind(this)}>Focus & Priorities</h3>
+                        <h3 className="list header green" onClick={this.hideHandler3.bind(this)}>Focus & Priorities</h3>
                         <ul className={this.state.ul3}>
                             <li>Data Governance</li>
                             <li>MSR & PACO</li>

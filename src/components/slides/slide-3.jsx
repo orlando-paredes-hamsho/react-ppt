@@ -45,9 +45,9 @@ const config = {
         column: { animation: true },
     },
     series: [
-        { type:'column', data: [47], color:'#000', name:'Digital & ECM' },
-        { type:'column', data: [45], color:'#fff', name:'QA'},
-        { type:'column', data: [6], color:'#C364B8', name:'EDA'}
+        { type:'column', data: [47], color:'#3F3F40', name:'Digital & ECM', visible: false  },
+        { type:'column', data: [45], color:'#fff', name:'QA', visible: false },
+        { type:'column', data: [6], color:'#467408', name:'EDA', visible: false }
     ]
 };
 
@@ -82,7 +82,7 @@ hideHandler2(){
         return (
             <div className="row">
                 <div className="left side">
-                    <h3 className="year" >2010-13</h3>
+                    <h3 className="year" >2015</h3>
                     <div className="main-section left">
                         <Highcharts config={config}></Highcharts>
                     </div>
