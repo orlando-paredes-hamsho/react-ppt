@@ -133,6 +133,7 @@ img{
 }
 .list-content ul{
     list-style: none;
+    transition: all .5s ease;
 }
 .list-content ul li{
     position: relative;
@@ -175,5 +176,11 @@ img{
 
 .open{
     display: block;
+   
+}
+.close{
+    transform:scale(0);
+    display: none;
+    
 }
 
