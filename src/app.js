@@ -5,6 +5,7 @@ import _ from 'lodash';
 import SlideShow from './components/slide-show.jsx';
 import Cover from './components/slides/cover.jsx';
 import Slide1 from './components/slides/slide-1.jsx';
+import Slide2 from './components/slides/slide-2.jsx';
 
 export default class App extends Component {
   constructor(props){
@@ -16,6 +17,7 @@ export default class App extends Component {
         <SlideShow transition="horizontal" theme="tcs">
           <Cover />
           <Slide1 />
+           <Slide2 />
         </SlideShow>
     );
   }

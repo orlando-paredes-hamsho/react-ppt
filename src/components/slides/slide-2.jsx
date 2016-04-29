@@ -45,8 +45,8 @@ const config = {
         column: { animation: true },
     },
     series: [
-        { type:'column', data: [6], color:'#000', name:'Quality Assurance' },
-        { type:'column', data: [3], color:'#fff', name:'Dev'}
+        { type:'column', data: [9], color:'#000', name:'Quality Assurance' },
+        { type:'column', data: [12], color:'#fff', name:'Dev'}
     ]
 };
 
@@ -93,16 +93,16 @@ hideHandler2(){
                         <h3 className="list header blue" onClick={this.hideHandler.bind(this)}>Project Delivered</h3>
                         <ul className={this.state.ul1}>
 
-                            <li>Member Stories and Poll</li>
-                            <li>Ask USAA Financial Advice Community</li>
-                            <li>Introduce New Social Communities</li>
-                            <li>Collect Social Media Profile on Mobile</li>
+                            <li>Social Listening and Response</li>
+                            <li>Messaging HUB and Preferences</li>
+                            <li>ECT Authoring Tool Enhancements</li>
+                            <li>Separation Assessment Tool-Returning Warrior</li>
                         </ul>
                         <h3 className="list header light" onClick={this.hideHandler2.bind(this)}>Highlights</h3>
                         <ul className={this.state.ul2}>
-                            <li>Start Social Media Development</li>
-                            <li>Development Started with 3 Member Team</li>
-                            <li>GDL Mobile Lab Inaugurated in 2012</li>
+                            <li>Focused training on iOS & Android for a batch of 8</li>
+                            <li>started Native Mobile, ECT Development, EMM</li>
+                            <li>100% - ECT Runaway Support from GDL</li>
                         </ul>
                     </div>
                 </div>
