@@ -79,7 +79,7 @@ hideHandler2(){
     render(){
         
         return (
-            <div className="row">
+            <div className="row inverse">
                 <div className="left side">
                     <h3 className="year" >2010-13</h3>
                     <div className="main-section left">
@@ -90,7 +90,7 @@ hideHandler2(){
                 <div className="right side">
                     <div className="list-content">
                        
-                        <h3 className="list header blue" onClick={this.hideHandler.bind(this)}>Project Delivered</h3>
+                        <h3 className="list header black" onClick={this.hideHandler.bind(this)}>Project Delivered</h3>
                         <ul className={this.state.ul1}>
 
                             <li>Social Listening and Response</li>
