@@ -45,8 +45,8 @@ const config = {
         column: { animation: true },
     },
     series: [
-        { type:'column', data: [9], color:'#000', name:'Quality Assurance' },
-        { type:'column', data: [12], color:'#fff', name:'Dev'}
+        { type:'column', data: [9], color:'#3F3F40', name:'Quality Assurance' },
+        { type:'column', data: [12], color:'#21ABE8', name:'Dev'}
     ]
 };
 
@@ -81,7 +81,7 @@ hideHandler2(){
         return (
             <div className="row inverse">
                 <div className="left side">
-                    <h3 className="year" >2010-13</h3>
+                    <h3 className="year" >2014</h3>
                     <div className="main-section left">
                         <Highcharts config={config}></Highcharts>
                     </div>

@@ -124,6 +124,9 @@ img{
     font-weight: 700;
     padding: 0 0 0 15%;
 }
+.inverse .year{
+    color:#3F3F40;
+}
 .main-section.left{
     width:50%;
     position:absolute;
@@ -151,6 +154,7 @@ img{
 .list-content ul{
     list-style: none;
     transition: all .6s ease-out;
+    font-weight: bold;
 }
 .list-content ul li{
     position: relative;
