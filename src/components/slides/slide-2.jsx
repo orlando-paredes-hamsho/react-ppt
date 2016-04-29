@@ -45,8 +45,8 @@ const config = {
         column: { animation: true },
     },
     series: [
-        { type:'column', data: [9], color:'#000', name:'Quality Assurance' },
-        { type:'column', data: [12], color:'#fff', name:'Dev'}
+        { type:'column', data: [9], color:'#3F3F40', name:'Quality Assurance' },
+        { type:'column', data: [12], color:'#21ABE8', name:'Dev'}
     ]
 };
 
@@ -79,9 +79,9 @@ hideHandler2(){
     render(){
         
         return (
-            <div className="row">
+            <div className="row inverse">
                 <div className="left side">
-                    <h3 className="year" >2010-13</h3>
+                    <h3 className="year" >2014</h3>
                     <div className="main-section left">
                         <Highcharts config={config}></Highcharts>
                     </div>
@@ -90,7 +90,7 @@ hideHandler2(){
                 <div className="right side">
                     <div className="list-content">
                        
-                        <h3 className="list header blue" onClick={this.hideHandler.bind(this)}>Project Delivered</h3>
+                        <h3 className="list header black" onClick={this.hideHandler.bind(this)}>Project Delivered</h3>
                         <ul className={this.state.ul1}>
 
                             <li>Social Listening and Response</li>

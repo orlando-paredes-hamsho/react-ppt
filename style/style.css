@@ -22,13 +22,25 @@ img{
 
 /* TCS */
 
-.tcs{
+.tcs .slide .row{
     background:url(../img/bk.png);
     background-repeat: repeat-y;
     background-size: 50%;
     background-position: left;
+    height: 100%;
+}
+.tcs .slide .row.inverse{
+    background-position: right;
+}
+.tcs .slide .row.inverse ul{
+    color:white;
+    font-weight: bold;
+    
 }
 
+.tcs .slide{
+    background: #fff;
+}
 /********************************
         Cover
 ********************************/
@@ -112,6 +124,9 @@ img{
     font-weight: 700;
     padding: 0 0 0 15%;
 }
+.inverse .year{
+    color:#3F3F40;
+}
 .main-section.left{
     width:50%;
     position:absolute;
@@ -139,6 +154,7 @@ img{
 .list-content ul{
     list-style: none;
     transition: all .6s ease-out;
+    font-weight: bold;
 }
 .list-content ul li{
     position: relative;
@@ -173,6 +189,13 @@ img{
     font-size:1.5em;
     padding: .5em;
     color: #3F3F40;
+    border:1px solid #3F3F40;
+}
+.list.header.black{
+    background:#3F3F40;
+    font-size:1.5em;
+    padding: .5em;
+    color: #f1f1f1;
     border:1px solid #3F3F40;
 }
 
