@@ -1,7 +1,4 @@
-var req = require.context('./', true, /\.jsx$/);
-var exp = {};
-req.keys().forEach(function(key){
-    exp[key.split(/[\/\.]/)[2]] = req(key);
-});
+import Cover from "./cover.jsx";
+import Slide1 from "./slide-1.jsx";
 
-export default exp;
+exCover;

@@ -3,9 +3,8 @@ import { Component } from 'react';
 import _ from 'lodash';
 
 import SlideShow from './components/slide-show.jsx';
-import * as Slides from './components/slides';
-
-var slides = Slides.default;
+import Cover from './components/slides/cover.jsx';
+import Slide1 from './components/slides/slide-1.jsx';
 
 export default class App extends Component {
   constructor(props){
@@ -15,9 +14,8 @@ export default class App extends Component {
   render(){
     return (
         <SlideShow transition="horizontal" theme="tcs">
-          {_.map(slides,(slide) => {
-            return slide.default.prototype.render();
-          })}
+          <Cover />
+          <Slide1 />
         </SlideShow>
     );
   }

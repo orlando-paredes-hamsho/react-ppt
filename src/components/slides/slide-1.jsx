@@ -51,9 +51,19 @@ const config = {
 };
 
 class Slide1 extends Component {
-    
+hideHandler(){
+ if(this.state.classShow == 'open'){
+     this.state.classShow = 'close';
+     this.forceUpdate();
+ }else if(this.state.classShow == 'close'){
+     this.state.classShow = 'open';
+     this.forceUpdate();
+ }
+ this.forceUpdate();
+}    
     constructor(props){
         super(props);
+        this.state = {classShow:'open'};
     }
     
     render(){
@@ -61,7 +71,7 @@ class Slide1 extends Component {
         return (
             <div className="row">
                 <div className="left side">
-                    <h3 className="year">2010-13</h3>
+                    <h3 className="year" >2010-13</h3>
                     <div className="main-section left">
                         <Highcharts config={config}></Highcharts>
                     </div>
@@ -69,9 +79,14 @@ class Slide1 extends Component {
                 
                 <div className="right side">
                     <div className="list-content">
+<<<<<<< HEAD
                         <h3 className="list header blue"><label htmlFor="clickHide1">Project Delivered</label></h3>
                         <input type="checkbox" id="clickHide1" name="clickHide1" className="clickHide" defaultChecked="true"/>
                         <ul>
+=======
+                        <h3 className="list header blue" onClick={this.hideHandler.bind(this)}>Project Delivered</h3>
+                        <ul className={this.state.classShow} ref={(ref) => this.firstUl = ref}>
+>>>>>>> 4fd45b727c63dd06926f768bc0f0bc8bdeecb54e
                             <li>Member Stories and Poll</li>
                             <li>Ask USAA Financial Advice Community</li>
                             <li>Introduce New Social Communities</li>

@@ -177,17 +177,3 @@ img{
     display: block;
 }
 
-
-/******  ******/
-
-.clickHide{
-    
-}
-
-.clickHide + ul{
-    height:0;
-}
-
-.clickHide:checked + ul{
-    height:auto;
-}
