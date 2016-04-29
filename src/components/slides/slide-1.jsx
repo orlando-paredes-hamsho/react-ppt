@@ -52,18 +52,28 @@ const config = {
 
 class Slide1 extends Component {
 hideHandler(){
- if(this.state.classShow == 'open'){
-     this.state.classShow = 'close';
+ if(this.state.ul1 == 'open'){
+     this.state.ul1 = 'close';
      this.forceUpdate();
- }else if(this.state.classShow == 'close'){
-     this.state.classShow = 'open';
+ }else if(this.state.ul1 == 'close'){
+     this.state.ul1 = 'open';
      this.forceUpdate();
  }
  this.forceUpdate();
-}    
+}  
+hideHandler2(){
+ if(this.state.ul2 == 'open'){
+     this.state.ul2 = 'close';
+     this.forceUpdate();
+ }else if(this.state.ul2 == 'close'){
+     this.state.ul2 = 'open';
+     this.forceUpdate();
+ }
+ this.forceUpdate();
+} 
     constructor(props){
         super(props);
-        this.state = {classShow:'open'};
+        this.state = {ul1:'open',ul2:'open'};
     }
     
     render(){
@@ -80,14 +90,14 @@ hideHandler(){
                 <div className="right side">
                     <div className="list-content">
                         <h3 className="list header blue" onClick={this.hideHandler.bind(this)}>Project Delivered</h3>
-                        <ul className={this.state.classShow} ref={(ref) => this.firstUl = ref}>
+                        <ul className={this.state.ul1}>
                             <li>Member Stories and Poll</li>
                             <li>Ask USAA Financial Advice Community</li>
                             <li>Introduce New Social Communities</li>
                             <li>Collect Social Media Profile on Mobile</li>
                         </ul>
-                        <h3 className="list header light">Highlights</h3>
-                        <ul>
+                        <h3 className="list header light" onClick={this.hideHandler2.bind(this)}>Highlights</h3>
+                        <ul className={this.state.ul2}>
                             <li>Start Social Media Development</li>
                             <li>Development Started with 3 Member Team</li>
                             <li>GDL Mobile Lab Inaugurated in 2012</li>
