@@ -9,9 +9,10 @@ class Slide5 extends Component{
     
     render(){
         return(
-            <div className="row">            
+            <div className="row">  
+
                 <div className="left side">
-                    
+                    <h3 className="year">Some Facts</h3>
                     <div className="content-circle">
                         <div className="circle">
                             <div className="circle small">
@@ -39,7 +40,7 @@ class Slide5 extends Component{
                             </div>
                         </div>
                          <div className="data-circle">
-                            Areas(Dev,QA,M&P,NACC)
+                            Areas (Dev,QA,M&P,NACC)
                         </div>
                     </div>
                     <div className="content-circle">
@@ -56,47 +57,47 @@ class Slide5 extends Component{
                     
                 </div>
                 <div className="right side">
-                
+                 <h3 className="year">&nbsp;</h3>
                     <div className="content-circle">
                         <div className="circle">
-                              <div className="circle small">
+                              <div className="circle small inverted">
                                  <span>75%</span>
                             </div>
                         </div>
-                         <div className="data-circle">
+                         <div className="data-circle inverted">
                             Local Talent Leverage
                         </div>
                     </div> 
                     
                      <div className="content-circle">
                         <div className="circle">
-                              <div className="circle small">
+                              <div className="circle small inverted">
                                  <span>5</span>
                             </div>
                         </div>
-                         <div className="data-circle">
+                         <div className="data-circle inverted">
                             BPO Skilled Associates
                         </div>
                     </div>
                     
                     <div className="content-circle">
                         <div className="circle">
-                              <div className="circle small">
+                              <div className="circle small inverted">
                                  <span>30%</span>
                             </div>
                         </div>
-                         <div className="data-circle">
+                         <div className="data-circle inverted">
                             Niche Technologies in industry
                         </div>
                     </div>
                     
                     <div className="content-circle">
                         <div className="circle">
-                              <div className="circle small">
+                              <div className="circle small inverted">
                                  <span>50%</span>
                             </div>
                         </div>
-                         <div className="data-circle">
+                         <div className="data-circle inverted">
                             Technical Certified
                         </div>
                     </div>

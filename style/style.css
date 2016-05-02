@@ -256,16 +256,28 @@ img{
     right: 11px;
     width: 75px;
 }
+.circle.small.inverted{
+     background:#fff;
+     border: none;
+     color:#1B3D56;
+}
 .circle.small span{
     line-height: 75px;
 }
 .data-circle{
-    display: inline-block;
-    width: 80%;
-    text-align: center;
     background: #FFFFFF;
-    padding: 1.3em;
     border-radius: 19px;
-    margin: 0 0 0 -31px;
     box-shadow: 4px 8px 22px -5px;
+    display: inline-block;
+    font-size:1.2em;
+    font-weight: bold;
+    margin: 0 0 0 -31px;
+    padding: 1em;
+    text-align: center;
+    width: 80%;
+}
+.data-circle.inverted{
+    background: #1BA4C4;
+    color:#fff;
+    box-shadow: 4px 8px 22px -5px black;
 }
