@@ -8,6 +8,7 @@ import Slide1 from './components/slides/slide-1.jsx';
 import Slide2 from './components/slides/slide-2.jsx';
 import Slide3 from './components/slides/slide-3.jsx';
 import Slide4 from './components/slides/slide-4.jsx';
+import Slide5 from './components/slides/slide-5.jsx';
 
 export default class App extends Component {
   constructor(props){
@@ -22,6 +23,7 @@ export default class App extends Component {
            <Slide2 />
             <Slide3 />
             <Slide4 />
+            <Slide5 />
         </SlideShow>
     );
   }
