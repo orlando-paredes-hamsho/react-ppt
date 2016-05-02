@@ -45,8 +45,8 @@ const config = {
         column: { animation: true },
     },
     series: [
-        { type:'column', data: [6], color:'#000', name:'Quality Assurance' },
-        { type:'column', data: [3], color:'#fff', name:'Dev'}
+        { type:'column', data: [6], color:'#3F3F40', name:'Quality Assurance', visible: false  },
+        { type:'column', data: [3], color:'#fff', name:'Dev', visible: false }
     ]
 };
 
