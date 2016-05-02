@@ -41,6 +41,21 @@ img{
 .tcs .slide{
     background: #fff;
 }
+
+.tcs-bg{
+    background:url(../img/bk.png);
+    background-size: 50%;
+    height: 100%;
+}
+    .tcs-bg-inner{
+    background: rgba(255,255,255,0.6);
+    background-size: 80%;
+    background-position: center center;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+    }
 /********************************
         Cover
 ********************************/
@@ -126,6 +141,9 @@ img{
 }
 .inverse .year{
     color:#3F3F40;
+}
+.year.facts{
+    margin: 0.7em 0;
 }
 .main-section.left{
     width:50%;

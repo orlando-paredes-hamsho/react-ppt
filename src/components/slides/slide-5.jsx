@@ -12,7 +12,7 @@ class Slide5 extends Component{
             <div className="row">  
 
                 <div className="left side">
-                    <h3 className="year">Some Facts</h3>
+                    <h3 className="year facts">Some Facts</h3>
                     <div className="content-circle">
                         <div className="circle">
                             <div className="circle small">
@@ -57,7 +57,7 @@ class Slide5 extends Component{
                     
                 </div>
                 <div className="right side">
-                 <h3 className="year">&nbsp;</h3>
+                 <h3 className="year facts">&nbsp;</h3>
                     <div className="content-circle">
                         <div className="circle">
                               <div className="circle small inverted">
