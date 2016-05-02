@@ -281,6 +281,41 @@ img{
     color:#fff;
     box-shadow: 4px 8px 22px -5px black;
 }
+.data-row{
+    padding: 1em;
+    background: #636161;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    margin:3em;
+}
+.data-row .number{
+     display: inline-block;
+    float: right;
+    background: #4093A0;
+    padding: 1em;
+    min-width: 80px;
+    min-height: 50px;
+    text-align: center;
+}
+.data-square{
+    margin: 3em;
+    background: #636161;
+    padding: 2em;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.data-square ul{
+    list-style-type: square;
+}
+.center{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+}
 .go{
     -webkit-animation: mymove .5s;  /* Chrome, Safari, Opera */
     -webkit-animation-iteration-count: 1;  /* Chrome, Safari, Opera */
