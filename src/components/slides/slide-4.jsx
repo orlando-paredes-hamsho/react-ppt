@@ -52,37 +52,14 @@ const config = {
 };
 
 class Slide1 extends Component {
-hideHandler(){
-
- if(this.state.ul1 == 'open'){
-     this.state.ul1 = 'close';
-     this.forceUpdate();
- }else if(this.state.ul1 == 'close'){
-     this.state.ul1 = 'open';
-     this.forceUpdate();
- }
- this.forceUpdate();
-}  
-hideHandler2(){
- if(this.state.ul2 == 'open'){
-     this.state.ul2 = 'close';
-     this.forceUpdate();
- }else if(this.state.ul2 == 'close'){
-     this.state.ul2 = 'open';
-     this.forceUpdate();
- }
- this.forceUpdate();
-} 
-hideHandler3(){
- if(this.state.ul3 == 'open'){
-     this.state.ul3 = 'close';
-     this.forceUpdate();
- }else if(this.state.ul3 == 'close'){
-     this.state.ul3 = 'open';
-     this.forceUpdate();
- }
- this.forceUpdate();
-} 
+hideHandler(handler){
+   if(this.state["ul"+handler] == 'close'){
+       this.setState({["ul"+handler]:'open'});
+   }
+   else if(this.state["ul"+handler] == 'open'){
+       this.setState({["ul"+handler]:'close'});
+   }
+}
     constructor(props){
         super(props);
         this.state = {ul1:'close',ul2:'close',ul3:'close'};    }
@@ -100,7 +77,7 @@ hideHandler3(){
                 
                 <div className="right side">
                     <div className="list-content">
-                        <h3 className="list header black" onClick={this.hideHandler.bind(this)}>Project Delivered</h3>
+                        <h3 className="list header black" onClick={()=>{this.hideHandler(1)}}>Project Delivered</h3>
                         <ul className={this.state.ul1}>
 
                             <li>IMM</li>
@@ -109,7 +86,7 @@ hideHandler3(){
                             <li>Ent - BI(ADR, UDA Retirment)</li>
                            
                         </ul>
-                        <h3 className="list header light" onClick={this.hideHandler2.bind(this)}>Highlights</h3>
+                        <h3 className="list header light" onClick={()=>{this.hideHandler(2)}}>Highlights</h3>
                         <ul className={this.state.ul2}>
                             <li>Inaugurated BI Lab in TCS facility</li>
                             <li>ONE-Enterprise team</li>
@@ -117,7 +94,7 @@ hideHandler3(){
                              <li>1 CIO Quality Cup</li>
                              <li>De-centralized BI Lab operations across LOBs</li>
                         </ul>
-                        <h3 className="list header green" onClick={this.hideHandler3.bind(this)}>Focus & Priorities</h3>
+                        <h3 className="list header green" onClick={()=>{this.hideHandler(3)}}>Focus & Priorities</h3>
                         <ul className={this.state.ul3}>
                             <li>Data Governance</li>
                             <li>MSR & PACO</li>
