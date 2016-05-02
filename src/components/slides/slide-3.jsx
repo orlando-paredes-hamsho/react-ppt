@@ -52,26 +52,13 @@ const config = {
 };
 
 class Slide1 extends Component {
-hideHandler(){
-
- if(this.state.ul1 == 'open'){
-     this.state.ul1 = 'close';
-     this.forceUpdate();
- }else if(this.state.ul1 == 'close'){
-     this.state.ul1 = 'open';
-     this.forceUpdate();
- }
- this.forceUpdate();
-}  
-hideHandler2(){
- if(this.state.ul2 == 'open'){
-     this.state.ul2 = 'close';
-     this.forceUpdate();
- }else if(this.state.ul2 == 'close'){
-     this.state.ul2 = 'open';
-     this.forceUpdate();
- }
- this.forceUpdate();
+hideHandler(handler){
+   if(this.state["ul"+handler] == 'close'){
+       this.setState({["ul"+handler]:'open'});
+   }
+   else if(this.state["ul"+handler] == 'open'){
+       this.setState({["ul"+handler]:'close'});
+   }
 } 
     constructor(props){
         super(props);
@@ -90,7 +77,7 @@ hideHandler2(){
                 
                 <div className="right side">
                     <div className="list-content">
-                        <h3 className="list header blue" onClick={this.hideHandler.bind(this)}>Project Delivered</h3>
+                        <h3 className="list header blue" onClick={()=>{this.hideHandler(1)}}>Project Delivered</h3>
                         <ul className={this.state.ul1}>
 
                             <li>Mobile Service Locator, Apple Pay</li>
@@ -99,7 +86,7 @@ hideHandler2(){
                             <li>EMM PEP+ Enhancements</li>
                             <li>Account Summary Enhancements</li>
                         </ul>
-                        <h3 className="list header light" onClick={this.hideHandler2.bind(this)}>Highlights</h3>
+                        <h3 className="list header light" onClick={()=>{this.hideHandler(2)}}>Highlights</h3>
                         <ul className={this.state.ul2}>
                             <li>Started Dotcom, MSR Lab development</li>
                             <li>Cross Skilling on iOS, Android, Adaptative Web</li>

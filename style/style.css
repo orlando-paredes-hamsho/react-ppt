@@ -299,3 +299,21 @@ img{
     color:#fff;
     box-shadow: 4px 8px 22px -5px black;
 }
+.go{
+    -webkit-animation: mymove .5s;  /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 1;  /* Chrome, Safari, Opera */
+    -webkit-animation-fill-mode: both;  /* Chrome, Safari, Opera */
+    animation: mymove 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes mymove {
+    from {width: 0px;font-size: 0;}
+    to {width: 500px;font-size: inherit;}
+}
+
+@keyframes mymove {
+    from {width: 0px;font-size: 0;}
+    to {width: 500px;font-size: inherit;}
+}
