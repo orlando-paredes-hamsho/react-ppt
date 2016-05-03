@@ -345,10 +345,10 @@ img{
 
 @-webkit-keyframes mymove {
     from {width: 0px;font-size: 0;}
-    to {width: 500px;font-size: inherit;}
+    to {width: 80%;font-size: inherit;}
 }
 
 @keyframes mymove {
     from {width: 0px;font-size: 0;}
-    to {width: 500px;font-size: inherit;}
+    to {width: 80%;font-size: inherit;}
 }
