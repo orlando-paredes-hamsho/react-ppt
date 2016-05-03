@@ -46,8 +46,8 @@ const config = {
     },
     series: [
         { type:'column', data: [50], color:'#3F3F40', name:'Digital & ECM', visible: false },
-        { type:'column', data: [9], color:' #467408', name:'QA', visible: false },
-        { type:'column', data: [50], color:'#21ABE9', name:'EDA', visible: false }
+        { type:'column', data: [9], color:' #21ABE9', name:'QA', visible: false },
+        { type:'column', data: [50], color:'#467408', name:'EDA', visible: false }
     ]
 };
 

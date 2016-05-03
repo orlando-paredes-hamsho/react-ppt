@@ -145,6 +145,11 @@ img{
 .year.facts{
     margin: 0.7em 0;
 }
+.year.fixed{
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
 .main-section.left{
     width:50%;
     position:absolute;
@@ -273,6 +278,7 @@ img{
     bottom: 11px;
     right: 11px;
     width: 75px;
+    cursor:pointer;
 }
 .circle.small.inverted{
      background:#fff;
@@ -319,13 +325,14 @@ img{
 .data-square{
     margin: 3em;
     background: #636161;
-    padding: 2em;
+    padding: 1em;
     color: white;
     font-weight: bold;
     font-size: 1.2em;
 }
 .data-square ul{
     list-style-type: square;
+    margin:0;
 }
 .center{
     position: absolute;

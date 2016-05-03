@@ -12,7 +12,7 @@ class Slide7 extends Component{
         <div className="tcs-bg">
             <div className="tcs-bg-inner">
                 <div className="center">
-                
+                   <h3 className="year fixed">Highlights</h3>
                    <div className="data-row">
                         Board of Directors Deliverables
                         <div className="number">5</div>
