@@ -151,6 +151,9 @@ img{
     padding: 0;
     text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
+.year.fixed.graph{
+    margin: -0.5em 0 0.5em 0;
+}
 .main-section.left{
     width:50%;
     position:absolute;
@@ -269,6 +272,9 @@ img{
     width: 100px;
     
     
+}
+.content-circle .circle{
+    box-shadow: -1px 3px 5px rgba(0,0,0,0.5);
 }
 .circle.small{
     background:#1BA4C4;
