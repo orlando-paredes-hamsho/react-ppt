@@ -35,7 +35,7 @@ const config = {
         }
     },
     series: [{
-        name: 'Brands',
+        name: 'Skills',
         data: [
             { name: '.Net', y: 40 },
             { name: 'Java/J2EE', y: 8 },
