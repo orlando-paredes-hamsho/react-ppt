@@ -3,7 +3,8 @@ import { Component } from 'react';
 import _ from 'lodash';
 
 import SlideShow from './components/slide-show.jsx';
-import Cover from './components/slides/cover.jsx';
+import Cover from './components/slides/Cover.jsx';
+import About from './components/slides/About.jsx';
 
 export default class App extends Component {
   constructor(props){
@@ -12,8 +13,9 @@ export default class App extends Component {
   
   render(){
 	return (
-		<SlideShow transition="horizontal" theme="orlando">
+		<SlideShow transition="opacity" theme="orlando">
 			<Cover />
+			<About />
 		</SlideShow>
 	);
   }
