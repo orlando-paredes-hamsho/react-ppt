@@ -43,8 +43,3 @@ Then once it's downloaded
 ```
 
 This will get your files up to date and you will be able to continue working.
-
-
-## To add a new slide ##
-
-Just add a new jsx file inside of src/components/slides the loader will get it from there.
