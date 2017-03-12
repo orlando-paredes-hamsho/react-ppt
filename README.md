@@ -5,7 +5,7 @@
 From your terminal run:
 
 ```bash
-    git clone git@github.com:Hijolt/redux-starter.git 
+    git clone git@github.com:orlando-paredes-hamsho/react-ppt.git
 ```
 
 Then once it's downloaded
@@ -25,7 +25,7 @@ From your terminal run:
 Or in cloud 9:
 
 ```bash
-    webpack-dev-server  --host $IP --port $PORT  --hot --inline
+    npm run cloud
 ```
 
 ## Before Working on the file ##
