@@ -65,8 +65,8 @@ class Slide6 extends Component {
     render(){
         
         return (
-            <div className="tcs-bg">
-                <div className="tcs-bg-inner">
+            <div className="">
+                <div className="">
                     <h3 className="year fixed graph">Main Skillset</h3>
                     <Highcharts config={config}></Highcharts>
                 </div>

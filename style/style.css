@@ -19,43 +19,25 @@ img{
 /********************************
             Themes
 *********************************/
-
-/* TCS */
-
-.tcs .slide .row{
+.slide .row{
     background:url(../img/bk.png);
     background-repeat: repeat-y;
     background-size: 50%;
     background-position: left;
     height: 100%;
 }
-.tcs .slide .row.inverse{
+.slide .row.inverse{
     background-position: right;
 }
-.tcs .slide .row.inverse ul{
+.slide .row.inverse ul{
     color:white;
     font-weight: bold;
     
 }
 
-.tcs .slide{
+.slide{
     background: #fff;
 }
-
-.tcs-bg{
-    background:url(../img/bk.png);
-    background-size: 50%;
-    height: 100%;
-}
-    .tcs-bg-inner{
-    background: rgba(255,255,255,0.6);
-    background-size: 80%;
-    background-position: center center;
-    height: 100%;
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 100px;
-    }
 /********************************
         Cover
 ********************************/
