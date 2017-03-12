@@ -302,10 +302,10 @@ img{
     display: inline-block;
     font-size:1.2em;
     font-weight: bold;
-    margin: 0 0 0 -31px;
-    padding: 1em;
+    margin: 0 0 0 -25px;
+    padding: 5%;
     text-align: center;
-    width: 80%;
+    max-width: 75%;
 }
 .data-circle.inverted{
     background: #1BA4C4;

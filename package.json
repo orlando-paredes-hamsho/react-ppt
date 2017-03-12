@@ -1,15 +1,17 @@
 {
-  "name": "WorkPPT",
+  "name": "react-ppt",
   "version": "1.0.0",
   "description": "Sandbox for React PPT effort",
   "main": "index.js",
   "repository": "",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "cloud": "webpack-dev-server  --host $IP --port $PORT  --hot --inline",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "lint": "eslint ./src"
   },
-  "author": "",
+  "author": "Orlando Paredes Hamsho",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.2.1",

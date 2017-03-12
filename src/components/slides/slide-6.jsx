@@ -33,8 +33,8 @@ const config = {
     series: [{
         name: 'Skills',
         data: [
-            { name: '.Net', y: 40 },
-            { name: 'Java/J2EE', y: 8 },
+            { name: 'Java/J2EE', y: 40 },
+            { name: 'Javascript', y: 8 },
             { name: 'UI/UX', y: 5 },
             { name: 'Business Process Skills', y: 20 },
             { name: 'ETL', y: 3 },

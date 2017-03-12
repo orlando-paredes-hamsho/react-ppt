@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import Swipeable from 'react-swipeable';
 
 import Slide from './slide.jsx';
 
@@ -49,6 +50,14 @@ class SlideShow extends Component {
         return false;
     }
     
+    swipedLeft(e) {
+        this.setCurrentSlide(this.props.currentSlide+1, "forward");
+    }
+    
+    swipedRight(e) {
+        this.setCurrentSlide(this.props.currentSlide-1,"backward");
+    }
+    
     render(){
         if( React.Children.count(this.props.children) === 0 ) return null;
         
@@ -56,17 +65,22 @@ class SlideShow extends Component {
                                 ? "slide_show " + this.props.transition + " " + this.props.direction
                                 : "slide_show " + this.props.direction;
         return (
+         <Swipeable
+                onSwipedRight={this.swipedRight.bind(this)}
+                onSwipedLeft={this.swipedLeft.bind(this)}
+            >
             <div tabIndex="0"
                 className={className + " " + this.props.theme} 
                 onClick={ this.handleClick.bind(this)}
                 onKeyUp={ this.handleKeyboard.bind(this) }
             >
-                <ReactCSSTransitionGroup transitionName="slides" transitionEnterTimeout={1} transitionLeaveTimeout={500} >
-                    <Slide key={this.props.currentSlide}>
-                        {(React.Children.count(this.props.children) > 1) ? this.props.children[this.props.currentSlide] : this.props.children}
-                    </Slide>
-                </ReactCSSTransitionGroup>
+                    <ReactCSSTransitionGroup transitionName="slides" transitionEnterTimeout={1} transitionLeaveTimeout={500} >
+                        <Slide key={this.props.currentSlide}>
+                            {(React.Children.count(this.props.children) > 1) ? this.props.children[this.props.currentSlide] : this.props.children}
+                        </Slide>
+                    </ReactCSSTransitionGroup>
             </div>
+            </Swipeable>
         );
     }
     

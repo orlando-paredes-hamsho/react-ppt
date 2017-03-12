@@ -93,6 +93,7 @@ hideHandler(handler){
                             <li>EMM Wolf-pack @ Nearshore</li>
                              <li>1 CIO Quality Cup</li>
                              <li>De-centralized BI Lab operations across LOBs</li>
+                             <li>Projects re-christened as Products</li>
                         </ul>
                         <h3 className="list header green" onClick={()=>{this.hideHandler(3)}}>Focus & Priorities</h3>
                         <ul className={this.state.ul3}>
