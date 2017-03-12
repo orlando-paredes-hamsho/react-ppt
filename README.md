@@ -1,4 +1,4 @@
-# Enterprise Slide Show
+# React-Redux Slide Show
 
 ## Install ##
 
